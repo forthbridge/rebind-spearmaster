@@ -1,0 +1,3 @@
+[h1]Provides a Remix config to rebind Spearmaster's spear extraction![/h1]
+
+[b][u]Source: https://github.com/forthbridge/rebind-spearmaster[/u][/b]
