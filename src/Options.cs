@@ -86,7 +86,7 @@ namespace RebindSpearmaster
 
             DrawKeybinders(keybindPlayer4, ref Tabs[tabIndex]);
 
-            AddNewLine(2);
+            AddNewLine(4);
             DrawBox(ref Tabs[tabIndex]);
         }
 

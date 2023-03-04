@@ -89,8 +89,6 @@ namespace RebindSpearmaster
             c.EmitDelegate<Func<Player, bool>>((player) =>
             {
                 wasInputProcessed[player] = true;
-
-                // Run depending on input
                 return IsCustomKeybindPressed(player);
             });
 

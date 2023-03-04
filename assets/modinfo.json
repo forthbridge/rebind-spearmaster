@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"target_game_version": "v1.9.06",
 	"authors": "forthbridge",
-	"description": "Provides a Remix config for rebinding Spearmater's spear extraction!<LINE><LINE>Source:",
+	"description": "Provides a Remix config for rebinding Spearmaster's spear extraction!<LINE><LINE>Source: https://github.com/forthbridge/rebind-spearmaster",
 	"requirements": [],
 	"requirements_names": [],
 	"tags": ["Accessibility", "Game Mechanics"],
