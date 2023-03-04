@@ -60,7 +60,7 @@ namespace RebindSpearmaster
         private readonly List<OpLabel> textLabels = new();
         #endregion
 
-        private const int NUMBER_OF_TABS = 2;
+        private const int NUMBER_OF_TABS = 1;
 
         public override void Initialize()
         {
@@ -69,6 +69,8 @@ namespace RebindSpearmaster
             int tabIndex = -1;
 
             AddTab(ref tabIndex, "Input");
+
+            AddNewLine(3);
 
             DrawKeybinders(keybindKeyboard, ref Tabs[tabIndex]);
             AddNewLine(1);
@@ -84,7 +86,7 @@ namespace RebindSpearmaster
 
             DrawKeybinders(keybindPlayer4, ref Tabs[tabIndex]);
 
-            AddNewLine(1);
+            AddNewLine(2);
             DrawBox(ref Tabs[tabIndex]);
         }
 
