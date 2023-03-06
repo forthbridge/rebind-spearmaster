@@ -16,16 +16,16 @@ namespace RebindSpearmaster
         public static Configurable<KeyCode> keybindKeyboard = instance.config.Bind("keybindKeyboard", KeyCode.LeftShift, new ConfigurableInfo(
             "Keybind to produce a needle for Keyboard.", null, "", "Keyboard"));
 
-        public static Configurable<KeyCode> keybindPlayer1 = instance.config.Bind("keybindPlayer1", KeyCode.Joystick1Button4, new ConfigurableInfo(
+        public static Configurable<KeyCode> keybindPlayer1 = instance.config.Bind("keybindPlayer1", KeyCode.Joystick1Button2, new ConfigurableInfo(
             "Keybind to produce a needle for Player 1.", null, "", "Player 1"));
 
-        public static Configurable<KeyCode> keybindPlayer2 = instance.config.Bind("keybindPlayer2", KeyCode.Joystick2Button4, new ConfigurableInfo(
+        public static Configurable<KeyCode> keybindPlayer2 = instance.config.Bind("keybindPlayer2", KeyCode.Joystick2Button2, new ConfigurableInfo(
             "Keybind to produce a needle for Player 2.", null, "", "Player 2"));
 
-        public static Configurable<KeyCode> keybindPlayer3 = instance.config.Bind("keybindPlayer3", KeyCode.Joystick3Button4, new ConfigurableInfo(
+        public static Configurable<KeyCode> keybindPlayer3 = instance.config.Bind("keybindPlayer3", KeyCode.Joystick3Button2, new ConfigurableInfo(
             "Keybind to produce a needle for Player 3.", null, "", "Player 3"));
 
-        public static Configurable<KeyCode> keybindPlayer4 = instance.config.Bind("keybindPlayer4", KeyCode.Joystick4Button4, new ConfigurableInfo(
+        public static Configurable<KeyCode> keybindPlayer4 = instance.config.Bind("keybindPlayer4", KeyCode.Joystick4Button2, new ConfigurableInfo(
             "Keybind to produce a needle for Player 4.", null, "", "Player 4"));
 
         #endregion
