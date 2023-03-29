@@ -68,6 +68,19 @@ namespace RebindSpearmaster
             Tabs = new OpTab[NUMBER_OF_TABS];
             int tabIndex = -1;
 
+            if (MachineConnector.IsThisModActive("rebindeverything"))
+            {
+                AddTab(ref tabIndex, "ERROR!");
+                AddNewLine(9);
+
+                AddTextLabel("Rebind everything is active!\nPlease configure spear extraction via that mod instead.", FLabelAlignment.Center, true);
+                DrawTextLabels(ref Tabs[tabIndex]);
+
+                AddNewLine(9);
+                DrawBox(ref Tabs[tabIndex]);
+                return;
+            }
+
             AddTab(ref tabIndex, "Input");
 
             AddNewLine(3);

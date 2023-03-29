@@ -12,20 +12,26 @@ namespace RebindSpearmaster
 {
     internal static class Hooks
     {
-        public static void ApplyHooks() => On.RainWorld.OnModsInit += RainWorld_OnModsInit;
-
-        private static Dictionary<Player, bool> wasInputProcessed = new Dictionary<Player, bool>();
+        public static void ApplyHooks() => On.RainWorld.PostModsInit += RainWorld_PostModsInit;
+        
 
         private static bool isInit = false;
-
-        private static void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
+        
+        private static void RainWorld_PostModsInit(On.RainWorld.orig_PostModsInit orig, RainWorld self)
         {
+
             orig(self);
 
             if (isInit) return;
             isInit = true;
 
             MachineConnector.SetRegisteredOI(Plugin.MOD_ID, Options.instance);
+
+            if (MachineConnector.IsThisModActive("rebindeverything"))
+            {
+                Plugin.Logger.LogWarning("REBIND EVERYTHING IS INSTALLED AND ACTIVE!\nThis mod conflicts with it, disabling self...");
+                return;
+            }
 
             try
             {
@@ -36,6 +42,9 @@ namespace RebindSpearmaster
                 Plugin.Logger.LogError(ex);
             }
         }
+
+
+        private static Dictionary<Player, bool> wasInputProcessed = new Dictionary<Player, bool>();
 
         private static void Player_GrabUpdateIL(ILContext il)
         {

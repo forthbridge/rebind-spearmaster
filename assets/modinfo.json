@@ -1,7 +1,7 @@
 {
 	"id": "rebindspearmaster",
 	"name": "Rebind Spearmaster",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"authors": "forthbridge",
 	"description": "Provides a Remix config for rebinding Spearmaster's spear extraction!<LINE><LINE>Source: https://github.com/forthbridge/rebind-spearmaster",
 	"requirements": ["moreslugcats"],
