@@ -1,3 +1,5 @@
+# Support for this mod has been dropped - [Rebind Everything](https://github.com/forthbridge/rebind-everything) can handle rebinding Spearmaster, and much more!
+
 # Provides a Remix config to rebind Spearmaster's spear extraction!
 
 ## Manual Installation
